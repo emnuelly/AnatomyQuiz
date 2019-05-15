@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.FinalActivity"
+        android:background="@color/preto"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_quiz"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ga"
+                android:layout_marginTop="-80dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtAcertos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="18sp"
+                    android:text="Acertos: "
+                    android:textColor="@color/verde" />
+
+
+                <TextView
+                    android:id="@+id/acertos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtErros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Erros: "
+                    android:textSize="18sp"
+                    android:textColor="@color/vermelho"
+                    />
+
+
+                <TextView
+                    android:id="@+id/erros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18sp"
+                    android:text="0"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botao"
+                    android:fontFamily="monospace"
+                    android:onClick="iniciarJogo"
+                    android:text="Jogar Novamente"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/btnSair"
+                    android:layout_marginLeft="0dp"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botao"
+                    android:fontFamily="monospace"
+                    android:onClick="finalizarJogo"
+                    android:text="Sair"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/btnJogarNovamente"
+                    android:layout_marginLeft="50dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
